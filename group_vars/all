@@ -1,0 +1,27 @@
+---
+
+# Default user in most Docker containers and owner of root_dir. Most likely the same as ssh user
+owner: gb
+domain_name: corp.sitepro.com
+timezone: America/Chicago
+
+enable_flaresolverr: false
+enable_overseerr: false
+enable_duplicacy: false
+enable_duplicati: false
+
+enable_mfa: false
+
+# You should leave these settings alone unless you know what you're doing
+
+root_dir: /mnt/storage
+torrents_dir: "{{ root_dir }}/torrents"
+media_dir: "{{ root_dir }}/medias"
+app_dir: "{{ root_dir }}/apps"
+
+wud_update_cron: "0 4 * * *"
+wud_prune_old_image: true
+
+caddy_access_log_path: "/var/log/caddy"
+
+

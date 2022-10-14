@@ -1,0 +1,3 @@
+[server]
+10.150.0.235 ansible_user=gb ansible_become=true
+
